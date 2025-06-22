@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eros Tecnologia</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/@popmotion/popcorn@1.1.0/dist/popcorn.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease forwards;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .section-divider {
+      height: 1px;
+      background: linear-gradient(to right, transparent, #4B5563, transparent);
+      margin: 3rem 0;
+    }
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 9999px;
+      width: 56px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      z-index: 50;
+    }
+  </style>
+</head>
+<body class="bg-black text-gray-100">
+  <!-- Header -->
+  <header class="bg-gray-900 shadow fade-in">
+    <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-white">Eros Tecnologia</h1>
+      <nav class="space-x-4">
+        <a href="#sobre" class="text-gray-300 hover:text-white transition">Sobre</a>
+        <a href="#servicos" class="text-gray-300 hover:text-white transition">Serviços</a>
+        <a href="#portfolio" class="text-gray-300 hover:text-white transition">Portfólio</a>
+        <a href="#depoimentos" class="text-gray-300 hover:text-white transition">Depoimentos</a>
+        <a href="#contato" class="text-gray-300 hover:text-white transition">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-r from-gray-900 via-black to-gray-800 text-white py-24 text-center fade-in">
+    <h2 class="text-5xl font-bold mb-4">Tecnologia Premium, Resultados Reais</h2>
+    <p class="text-lg mb-8">Soluções digitais sofisticadas para empresas que exigem o melhor</p>
+    <a href="#contato" class="bg-white text-black font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-200 transition">Fale Conosco</a>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Sobre -->
+  <section id="sobre" class="py-20 container mx-auto px-4 fade-in">
+    <h3 class="text-3xl font-bold mb-6 text-white">Quem Somos</h3>
+    <p class="mb-4 text-gray-300">Na Eros Tecnologia, somos especialistas em transformar ideias em experiências digitais de alto nível. Combinamos design elegante, engenharia de software de qualidade e estratégia orientada por dados para impulsionar negócios e posicionar marcas no ambiente digital.</p>
+    <p class="text-gray-300">Trabalhamos lado a lado com nossos clientes para entender suas necessidades e entregar soluções que realmente agregam valor, otimizam processos e destacam suas empresas no mercado.</p>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Serviços -->
+  <section id="servicos" class="bg-gray-900 py-20 fade-in">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-bold mb-10 text-white text-center">Nossos Serviços</h3>
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="bg-gray-800 p-6 rounded-xl shadow-lg text-center hover:scale-105 transition-transform">
+          <div class="mb-4">
+            <i data-lucide="globe" class="w-10 h-10 text-white mx-auto"></i>
+          </div>
+          <h4 class="text-xl font-semibold mb-2 text-white">Sistemas Web</h4>
+          <p class="text-gray-300">Desenvolvimento de sistemas personalizados, eficientes e escaláveis com design moderno e segurança de ponta.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-xl shadow-lg text-center hover:scale-105 transition-transform">
+          <div class="mb-4">
+            <i data-lucide="bar-chart-3" class="w-10 h-10 text-white mx-auto"></i>
+          </div>
+          <h4 class="text-xl font-semibold mb-2 text-white">Dashboards Personalizados</h4>
+          <p class="text-gray-300">Criação de dashboards interativos e intuitivos para visualização de dados e tomada de decisões estratégicas.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-xl shadow-lg text-center hover:scale-105 transition-transform">
+          <div class="mb-4">
+            <i data-lucide="settings" class="w-10 h-10 text-white mx-auto"></i>
+          </div>
+          <h4 class="text-xl font-semibold mb-2 text-white">Automação e Integrações</h4>
+          <p class="text-gray-300">Integração entre sistemas e automação de processos para máxima eficiência operacional.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-xl shadow-lg text-center hover:scale-105 transition-transform">
+          <div class="mb-4">
+            <i data-lucide="brush" class="w-10 h-10 text-white mx-auto"></i>
+          </div>
+          <h4 class="text-xl font-semibold mb-2 text-white">Artes Personalizadas</h4>
+          <p class="text-gray-300">Criação de logotipos, identidades visuais, artes para redes sociais e todo tipo de design sob medida para sua marca.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Portfólio -->
+  <section id="portfolio" class="py-20 container mx-auto px-4 fade-in">
+    <h3 class="text-3xl font-bold mb-10 text-white text-center">Nosso Portfólio</h3>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg">
+        <img src="https://via.placeholder.com/600x300" alt="Projeto 1" class="w-full h-auto">
+        <div class="p-6">
+          <h4 class="text-xl font-semibold text-white mb-2">Dashboard de Vendas</h4>
+          <p class="text-gray-300">Dashboard desenvolvido para acompanhamento em tempo real de metas, vendas e indicadores de desempenho.</p>
+        </div>
+      </div>
+      <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg">
+        <img src="https://via.placeholder.com/600x300" alt="Projeto 2" class="w-full h-auto">
+        <div class="p-6">
+          <h4 class="text-xl font-semibold text-white mb-2">Identidade Visual</h4>
+          <p class="text-gray-300">Desenvolvimento de logotipo e identidade visual moderna para marca do setor financeiro.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Depoimentos -->
+  <section id="depoimentos" class="py-20 container mx-auto px-4 fade-in">
+    <h3 class="text-3xl font-bold mb-10 text-white text-center">O que dizem nossos clientes</h3>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-gray-800 p-6 rounded-xl shadow text-gray-300">
+        <p>“A equipe da Eros entregou um sistema exatamente como imaginamos, com qualidade e agilidade. Superou nossas expectativas!”</p>
+        <p class="mt-4 text-sm text-gray-400">— Carla Souza, Gerente de Projetos</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl shadow text-gray-300">
+        <p>“Contratei o time para criar toda a parte visual da minha marca e fiquei impressionado com o resultado. Altamente recomendados!”</p>
+        <p class="mt-4 text-sm text-gray-400">— Rodrigo Lima, CEO StartupX</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Contato -->
+  <section id="contato" class="bg-gray-900 text-white py-20 fade-in">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-bold mb-6">Entre em Contato</h3>
+      <p class="mb-4 text-gray-300">Envie uma mensagem ou fale conosco diretamente pelo WhatsApp.</p>
+      <p class="text-gray-200">Email: eroscogroup@gmail.com</p>
+      <p class="text-gray-200">WhatsApp: (XX) XXXXX-XXXX</p>
+    </div>
+  </section>
+
+  <!-- Botão Flutuante WhatsApp -->
+  <a href="https://wa.me/55XXXXXXXXXXX" target="_blank" class="floating-whatsapp" aria-label="WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.72 11.06c-.43-.43-1.13-.43-1.56 0l-.78.78a1.1 1.1 0 01-1.56 0l-.39-.39a1.1 1.1 0 010-1.56l.78-.78a1.1 1.1 0 00-1.56-1.56l-2.1 2.1a5.5 5.5 0 107.78 7.78l2.1-2.1a1.1 1.1 0 00-1.56-1.56z" />
+    </svg>
+  </a>
+
+  <!-- Footer -->
+  <footer class="bg-black text-gray-500 text-center py-6">
+    <p>&copy; 2025 Eros Tecnologia. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
